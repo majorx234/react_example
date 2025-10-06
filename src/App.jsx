@@ -1,5 +1,9 @@
 import React from "react";
 
+function Buttonx(greetingInvalid, handleGreetClick) {
+  return <button disabled={greetingInvalid} onClick={handleGreetClick}>Greet</button>
+}
+
 function Greeter() {
   const [greeting, setGreeting] = React.useState("");
   function handleGreetClick() {
@@ -12,9 +16,8 @@ function Greeter() {
     <div>Greeting:
       <input value={greeting} onChange={e => setGreeting(e.target.value)}>
       </input>
+      <Buttonx greetingInvalid={greetingInvalid} handleGreetClick={handleGreetClick}></Buttonx>
       <span>{charsRemaining}</span>
-      <button disabled={greetingInvalid} onClick={handleGreetClick}>Greet
-      </button>
     </div>
   );
 }
