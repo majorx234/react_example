@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 function Buttonx(greetingInvalid, handleGreetClick) {
   return /*#__PURE__*/React.createElement("button", {
     disabled: greetingInvalid,
@@ -20,5 +20,5 @@ function Greeter() {
     handleGreetClick: handleGreetClick
   }), /*#__PURE__*/React.createElement("span", null, charsRemaining));
 }
-export default Greeter;
+// export default Greeter;
 

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.ico" />
+    <title>react example</title>
+  <head>
+  <body>
+    <script src='../node_modules/react/umd/react.development.js'></script>
+    <script src='../node_modules/react-dom/umd/react-dom.development.js'></script>
+    <script src='../src/App.js'></script>
+    <div id='app'></div>
+    <script>
+      const root = ReactDOM.createRoot(document.getElementById('app'));
+      root.render(Greeter());
+    </script>
+  </body>
+</html>
